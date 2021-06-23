@@ -36,6 +36,9 @@ func NewZapLogger(opts ...logger.Option) logger.Logger {
 	if z.zapOptions.addCaller {
 		z.logger = z.logger.WithOptions(zap.AddCaller())
 	}
+	if z.zapOptions.addStackTrace {
+		z.logger = z.logger.WithOptions(zap.AddStacktrace(z.zapOptions.stackTraceLevelFunc))
+	}
 	return z
 }
 

@@ -20,6 +20,7 @@ func TestMain(m *testing.M) {
 		WithRedisWriter(cli, "test", "micro"),
 		WithStdout(),
 		WithLevel(logger.InfoLevel),
+		WithStackTrace(logger.ErrorLevel),
 	)
 	l = NewZapLogger(opt)
 	m.Run()
@@ -27,4 +28,5 @@ func TestMain(m *testing.M) {
 
 func TestZapLogger_Log(t *testing.T) {
     l.Log(logger.InfoLevel, "hello", "world")
+    l.Log(logger.ErrorLevel, "TEST")
 }

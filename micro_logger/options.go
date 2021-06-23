@@ -10,14 +10,16 @@ import (
 	"go.uber.org/zap/zapcore"
 )
 
-type zapKey struct {}
+type zapKey struct{}
 
 type ZapOptions struct {
-	encoder    zapcore.Encoder
-	levelFunc  zap.LevelEnablerFunc
-	syncer     zapcore.WriteSyncer
-	stdoutFlag bool
-	addCaller  bool
+	encoder             zapcore.Encoder
+	levelFunc           zap.LevelEnablerFunc
+	syncer              zapcore.WriteSyncer
+	stdoutFlag          bool
+	addCaller           bool
+	addStackTrace       bool
+	stackTraceLevelFunc zap.LevelEnablerFunc
 }
 
 type ZapOption func(options *ZapOptions)
@@ -61,11 +63,21 @@ func WithLevel(l logger.Level) ZapOption {
 	}
 }
 
-func Zap(opts ...ZapOption) logger.Option {
-    return func(options *logger.Options) {
-		if options.Context ==  nil {
-            options.Context = context.Background()
+func WithStackTrace(l logger.Level) ZapOption {
+	return func(options *ZapOptions) {
+		lvl := loggerToZapLevel(l)
+		options.addStackTrace = true
+		options.stackTraceLevelFunc = func(level zapcore.Level) bool {
+			return level >= lvl
 		}
-            options.Context = context.WithValue(options.Context, zapKey{}, opts)
+	}
+}
+
+func Zap(opts ...ZapOption) logger.Option {
+	return func(options *logger.Options) {
+		if options.Context == nil {
+			options.Context = context.Background()
+		}
+		options.Context = context.WithValue(options.Context, zapKey{}, opts)
 	}
 }
