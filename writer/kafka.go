@@ -12,11 +12,9 @@ type Kafka struct {
 }
 
 func (k *Kafka) Write(b []byte) (int, error) {
-	var key []byte
-	copy(key, k.key)
 	err := k.writer.WriteMessages(context.Background(), kafka.Message{
 		Topic: k.topic,
-		Key:   key,
+		Key:   []byte(k.key),
 		Value: b,
 	})
 	if err != nil {

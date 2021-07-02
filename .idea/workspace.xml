@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c93dc32c-c67b-4e29-9216-69cfae1d37bc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro_logger/logger_test.go" beforeDir="false" afterPath="$PROJECT_DIR$/micro_logger/logger_test.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/writer/kafka.go" beforeDir="false" afterPath="$PROJECT_DIR$/writer/kafka.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,19 +66,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (5)">
+  <component name="RunManager" selected="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (1)">
     <configuration name="TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (1)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
-      <module name="micro-plugin" />
-      <working_directory value="$PROJECT_DIR$/micro_logger" />
-      <framework value="gotest" />
-      <kind value="PACKAGE" />
-      <package value="github.com/DMwangnima/micro-plugin/micro_logger" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$" />
-      <pattern value="^\QTestZapLogger_Log\E$" />
-      <method v="2" />
-    </configuration>
-    <configuration name="TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (2)" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="micro-plugin" />
       <working_directory value="$PROJECT_DIR$/micro_logger" />
       <framework value="gotest" />
@@ -120,13 +111,24 @@
       <pattern value="^\QTestZapLogger_Log\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="micro-plugin" />
+      <working_directory value="$PROJECT_DIR$/micro_logger" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="github.com/DMwangnima/micro-plugin/micro_logger" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestZapLogger_Log\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (1)" />
+        <item itemvalue="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger" />
         <item itemvalue="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (5)" />
         <item itemvalue="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (4)" />
         <item itemvalue="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (3)" />
-        <item itemvalue="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (2)" />
-        <item itemvalue="Go Test.TestZapLogger_Log in github.com/DMwangnima/micro-plugin/micro_logger (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -150,22 +152,22 @@
     <integration-enabled>true</integration-enabled>
   </component>
   <component name="WindowStateProjectService">
-    <state width="1333" height="256" key="GridCell.Tab.0.bottom" timestamp="1624444266818">
+    <state width="1333" height="256" key="GridCell.Tab.0.bottom" timestamp="1625210512120">
       <screen x="0" y="0" width="1376" height="960" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.bottom/0.0.1376.960@0.0.1376.960" timestamp="1624444266818" />
-    <state width="1333" height="256" key="GridCell.Tab.0.center" timestamp="1624444266818">
+    <state width="1333" height="256" key="GridCell.Tab.0.bottom/0.0.1376.960@0.0.1376.960" timestamp="1625210512120" />
+    <state width="1333" height="256" key="GridCell.Tab.0.center" timestamp="1625210512120">
       <screen x="0" y="0" width="1376" height="960" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.center/0.0.1376.960@0.0.1376.960" timestamp="1624444266818" />
-    <state width="1333" height="256" key="GridCell.Tab.0.left" timestamp="1624444266818">
+    <state width="1333" height="256" key="GridCell.Tab.0.center/0.0.1376.960@0.0.1376.960" timestamp="1625210512120" />
+    <state width="1333" height="256" key="GridCell.Tab.0.left" timestamp="1625210512120">
       <screen x="0" y="0" width="1376" height="960" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.left/0.0.1376.960@0.0.1376.960" timestamp="1624444266818" />
-    <state width="1333" height="256" key="GridCell.Tab.0.right" timestamp="1624444266818">
+    <state width="1333" height="256" key="GridCell.Tab.0.left/0.0.1376.960@0.0.1376.960" timestamp="1625210512120" />
+    <state width="1333" height="256" key="GridCell.Tab.0.right" timestamp="1625210512120">
       <screen x="0" y="0" width="1376" height="960" />
     </state>
-    <state width="1333" height="256" key="GridCell.Tab.0.right/0.0.1376.960@0.0.1376.960" timestamp="1624444266818" />
+    <state width="1333" height="256" key="GridCell.Tab.0.right/0.0.1376.960@0.0.1376.960" timestamp="1625210512120" />
     <state width="1333" height="316" key="GridCell.Tab.1.bottom" timestamp="1624443057782">
       <screen x="0" y="0" width="1376" height="960" />
     </state>
